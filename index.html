@@ -12,13 +12,13 @@
     </header>
     <form id="survey-form">
       <fieldset>
-        <label for="name">Name: 
+        <label id="name-label" for="name">Name: 
           <input id="name" name="name" type="text" placeholder="Linkus Binkus" required/>
         </label>
-        <label for="email">Email:
-          <input id="email" name="email" type="text" placeholder="zeldaisthebest@gmail.com" required/>
+        <label id="email-label" for="email">Email:
+          <input id="email" name="email" type="email" placeholder="zeldaisthebest@gmail.com" required/>
         </label>
-        <label for="number">Number of Zelda games you've played:
+        <label id="number-label" for="number">Number of Zelda games you've played:
           <input id="number" name="games-played" type="number" min="1" max="29" placeholder="1"/>
         </label>
       </fieldset>
@@ -42,13 +42,13 @@
       </fieldset>
       <fieldset>How do you normally play Zelda games?
         <label for="main-quests">
-          <input class="inline"  name="play-style" id="main-quests" type="radio" /> Beat the main quests as fast as possible
+          <input class="inline"  name="play-style" id="main-quests" type="radio" value="1" /> Beat the main quests as fast as possible
         </label>
         <label for="100-percent">
-          <input class="inline"  name="play-style" id="100-percent" type="radio" /> 100% the entire game
+          <input class="inline"  name="play-style" id="100-percent" type="radio" value="2" /> 100% the entire game
         </label>
         <label for="wanderer">  
-          <input class="inline"  name="play-style" id="wanderer" type="radio" /> Wander aimlessly forgetting there's a story
+          <input class="inline"  name="play-style" id="wanderer" type="radio" value="3" /> Wander aimlessly forgetting there's a story
         </label>
       </fieldset>
       <fieldset>What are your favorite things to do in Zelda games?
@@ -67,7 +67,7 @@
           <textarea id="explanation" name="explanation" rows="5" cols="30" placeholder="TOTK is the best because you can torture koroks and..."></textarea>
         </label>
       </fieldset>
-      <input type="submit" value="Submit" />
+      <input id="submit" type="submit" value="Submit" />
     </form>
   </body>
 </html>
