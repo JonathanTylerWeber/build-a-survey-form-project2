@@ -6,8 +6,10 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1 id="title">The Legendary Zelda Survey</h1>
-    <p id="description">Please tell us a bit about your experience with "The Legend of Zelda" games<p>
+    <header class="header">
+      <h1 id="title">The Legendary Zelda Survey</h1>
+      <p id="description">Please tell us a bit about your experience with "The Legend of Zelda" games<p>
+    </header>
     <form id="survey-form">
       <fieldset>
         <label for="name">Name: 
@@ -40,29 +42,29 @@
       </fieldset>
       <fieldset>How do you normally play Zelda games?
         <label for="main-quests">
-          <input name="play-style" id="main-quests" type="radio" class="inline" />Beat the main quests as fast as possible
+          <input class="inline"  name="play-style" id="main-quests" type="radio" /> Beat the main quests as fast as possible
         </label>
         <label for="100-percent">
-          <input name="play-style" id="100-percent" type="radio" class="inline" />100% the entire game
+          <input class="inline"  name="play-style" id="100-percent" type="radio" /> 100% the entire game
         </label>
         <label for="wanderer">  
-          <input name="play-style" id="wanderer" type="radio" class="inline" />Wander aimlessly forgetting there's a story
+          <input class="inline"  name="play-style" id="wanderer" type="radio" /> Wander aimlessly forgetting there's a story
         </label>
       </fieldset>
       <fieldset>What are your favorite things to do in Zelda games?
         <label for="ride-horses">
-          <input id="ride-horse" type="checkbox" value="1" class="inline" /> Ride Horses
+          <input class="inline" id="ride-horse" type="checkbox" value="1" /> Ride Horses
         </label>
         <label for="solve-puzzles">
-          <input id="solve-puzzles" type="checkbox" value="2" class="inline" /> Solve Puzzles
+          <input class="inline"  id="solve-puzzles" type="checkbox" value="2" /> Solve Puzzles
         </label>
         <label for="failure">
-          <input id="failure" type="checkbox" value="3" class="inline" /> Getting frustrated and giving up
+          <input class="inline"  id="failure" type="checkbox" value="3" /> Get frustrated and giving up
         </label>
       </fieldset>
       <fieldset>
         <label>Why is Tears of the Kingdom the best Zelda game?
-          <textarea id="explanation" name="explanation" rows="3" cols="30" placeholder="TOTK is the best because you can torture koroks and..."></textarea>
+          <textarea id="explanation" name="explanation" rows="5" cols="30" placeholder="TOTK is the best because you can torture koroks and..."></textarea>
         </label>
       </fieldset>
       <input type="submit" value="Submit" />
