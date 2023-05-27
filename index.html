@@ -9,5 +9,63 @@
     <h1 id="title">The Legendary Zelda Survey</h1>
     <p id="description">Please tell us a bit about your experience with "The Legend of Zelda" games<p>
     <form id="survey-form">
+      <fieldset>
+        <label for="name">Name: 
+          <input id="name" name="name" type="text" placeholder="Linkus Binkus" required/>
+        </label>
+        <label for="email">Email:
+          <input id="email" name="email" type="text" placeholder="zeldaisthebest@gmail.com" required/>
+        </label>
+        <label for="number">Number of Zelda games you've played:
+          <input id="number" name="games-played" type="number" min="1" max="29" placeholder="1"/>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">What's your favorite Zelda game?
+          <select id="dropdown" name="favorite-game" >
+            <option value="">select one
+            </option>
+            <option value="1">Tears of the Kingdom
+            </option>
+            <option value="2">Breath of the Wild
+            </option>
+            <option value="3">Twilight Princess
+            </option>
+            <option value-="4">Majora's Mask
+            </option>
+            <option value="5">Ocarina of Time
+            </option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>How do you normally play Zelda games?
+        <label for="main-quests">
+          <input name="play-style" id="main-quests" type="radio" class="inline" />Beat the main quests as fast as possible
+        </label>
+        <label for="100-percent">
+          <input name="play-style" id="100-percent" type="radio" class="inline" />100% the entire game
+        </label>
+        <label for="wanderer">  
+          <input name="play-style" id="wanderer" type="radio" class="inline" />Wander aimlessly forgetting there's a story
+        </label>
+      </fieldset>
+      <fieldset>What are your favorite things to do in Zelda games?
+        <label for="ride-horses">
+          <input id="ride-horse" type="checkbox" value="1" class="inline" /> Ride Horses
+        </label>
+        <label for="solve-puzzles">
+          <input id="solve-puzzles" type="checkbox" value="2" class="inline" /> Solve Puzzles
+        </label>
+        <label for="failure">
+          <input id="failure" type="checkbox" value="3" class="inline" /> Getting frustrated and giving up
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Why is Tears of the Kingdom the best Zelda game?
+          <textarea id="explanation" name="explanation" rows="3" cols="30" placeholder="TOTK is the best because you can torture koroks and..."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" />
     </form>
   </body>
+</html>
